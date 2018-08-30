@@ -10,7 +10,7 @@
 <script type="text/javascript" src="script\custom.js"></script>
 <script type="text/javascript" src="script\map.js"></script>
 <!-- External CSS -->
-<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -24,19 +24,19 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Nunito', sans-serif};
 <body>
 
 <!-- navigation bar start-->
-<div class="w3-bar w3-xxlarge w3-card-4 w3-theme">
+<div class="w3-bar w3-top w3-xxlarge w3-card-4 w3-theme" style="margin-left:70px">
   <a href="#" class="w3-bar-item w3-button">Re-Tell</a>
 </div>
 <!-- navigation bar end-->
 
 <!-- side bar start -->
-<div class="w3-sidebar w3-bar-block w3-theme-2 w3-xxxlarge w3-card" style="width:80px">
+<nav class="w3-sidebar w3-bar-block w3-theme-2 w3-xxxlarge w3-card w3-top" style="width:80px">
   <a id="home" href="#" class="w3-bar-item  w3-border-bottom"><i class="fa fa-home"></i></a> 
   <a id="search" href="#" class="w3-bar-item  w3-border-bottom"><i class="fa fa-search"></i></a> 
   <a href="#" class="w3-bar-item  w3-border-bottom"><i class="fa fa-info-circle"></i></a> 
   <a href="#" class="w3-bar-item  w3-border-bottom"><i class="fa fa-sign-in"></i></a>
   <a href="#" class="w3-bar-item  w3-border-bottom"><i class="fa fa-phone"></i></a> 
-</div>
+</nav>
 <!-- side bar end -->
 
 <!-- search modal start -->
@@ -63,19 +63,69 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Nunito', sans-serif};
   </div>
 </div>
 <!-- search modal end -->
- <div class="w3-card-4 w3-display-middle" style="width:25%;height:450px;border-radius:10px;overflow:hidden">
-  <img src="images\building.jpg" alt="HSBC" 
-  style="width:100%;height:200px;border-top-left-radius:10px;border-top-right-radius:10px;">
-  <div style="width:100px;height:100px;margin-top:10px;position:relative;right:-35%;bottom:50px">
-	<img src="images\hsbc.jpg" style="border-radius:10px;width:100px;height:100px;position:absolute;bottom:30px;" class="shadow">
-  </div>
 
-  <div class="w3-container w3-center">
-    <p>The Italian / Austrian Alps</p>
-  </div>
+<!--Card start-->
+<div class="w3-row-padding" style="margin-left:80px;margin-top:80px">
+	<div class="w3-third">
+		<div class="w3-card" style="min-height:500px;border-radius:10px;overflow:hidden;margin-top:5px">
+			<div class="w3-display-container w3-text-white">
+				<img src="images\building.jpg" alt="HSBC" class="w3-img"
+				style="width:100%;height:200px;border-top-left-radius:10px;border-top-right-radius:10px;">
+				<div class="w3-display-topright w3-container w3-margin-top"><span>30 <i class="far fa-thumbs-up"></i></span>  <span>12 <i class="far fa-thumbs-down"></i></span>  <span>78 <i class="far fa-comment"></i></span></div>
+				<div class="w3-display-topleft w3-container w3-margin-top"><i class="far fa-heart"></i></span></div>
+			</div>
+			<div style="width:100px;height:15px;margin-top:10px;position:relative;right:-37.5%;bottom:-30px">
+				<img src="images\hsbc.jpg" style="border-radius:10px;width:100px;height:100px;position:absolute;bottom:30px;" class="shadow w3-img">
+			</div>
+			<div class="w3-center">
+				<span class="w3-xxlarge">HSBC</span>
+			</div>
+			<div class="w3-container w3-center">
+				<p>The Italian / Austrian Alps</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="w3-third">
+		<div class="w3-card" style="min-height:500px;border-radius:10px;overflow:hidden;margin-top:5px">
+			<div class="w3-display-container w3-text-white">
+				<img src="images\hat.jpeg" alt="HSBC" class="w3-img"
+				style="width:100%;height:200px;border-top-left-radius:10px;border-top-right-radius:10px;">
+				<div class="w3-display-topright w3-container w3-margin-top"><span>45 <i class="far fa-thumbs-up"></i></span>  <span>23 <i class="far fa-thumbs-down"></i></span>  <span>56 <i class="far fa-comment"></i></span></div>
+				<div class="w3-display-topleft w3-container w3-margin-top"><i class="far fa-heart"></i></span></div>
+			</div>
+			<div style="width:100px;height:15px;margin-top:10px;position:relative;right:-37.5%;bottom:-30px">
+				<img src="images\wood_hat.jpg" style="border-radius:10px;width:100px;height:100px;position:absolute;bottom:30px;" class="shadow w3-img">
+			</div>
+			<div class="w3-center">
+				<span class="w3-xxlarge">Wood Hat</span>
+			</div>
+			<div class="w3-container w3-center">
+				<p>The Italian / Austrian Alps</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="w3-third">
+		<div class="w3-card" style="min-height:500px;border-radius:10px;overflow:hidden;margin-top:5px">
+			<div class="w3-display-container w3-text-white">
+				<img src="images\fruits.jpeg" alt="HSBC" class="w3-img"
+				style="width:100%;height:200px;border-top-left-radius:10px;border-top-right-radius:10px;">
+				<div class="w3-display-topright w3-container w3-margin-top"><span>78 <i class="far fa-thumbs-up"></i></span>  <span>45 <i class="far fa-thumbs-down"></i></span>  <span>89 <i class="far fa-comment"></i></span></div>
+				<div class="w3-display-topleft w3-container w3-margin-top"><i class="far fa-heart"></i></span></div>
+			</div>
+			<div style="width:100px;height:15px;margin-top:10px;position:relative;right:-37.5%;bottom:-30px">
+				<img src="images\fruit_shop.jpg" style="border-radius:10px;width:100px;height:100px;position:absolute;bottom:30px;" class="shadow w3-img">
+			</div>
+			<div class="w3-center">
+				<span class="w3-xxlarge">Fruit Shop</span>
+			</div>
+			<div class="w3-container w3-center">
+				<p>The Italian / Austrian Alps</p>
+			</div>
+		</div>
+	</div>
 </div> 
-<!--card start-->
-
 <!--car end-->
 
 </body>
